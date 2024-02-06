@@ -32,4 +32,6 @@ public class Constants {
    * Color and line width constants go here
    */
   public static final Color SELECTED_COLOR = Color.BLUE;
+  public static final Color WIN_COLOR = Color.GREEN;
+  public static final Color LOSE_COLOR = Color.RED;
 }

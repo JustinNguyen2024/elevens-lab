@@ -38,7 +38,16 @@ public class View extends javax.swing.JFrame implements MessageHandler {
    * @return number of selected cards
    */
   private int setBorders(boolean[] cardSelectedStatus, Color color, int thickness) {
-
+      for (int i = 0; i < cards.length; i++) {
+            if (cardSelectedStatus[i] == true) {
+                this.getContentPane().setLayout(new FlowLayout());
+                JLabel label = new JLabel();
+                //thickness=2;
+                Border border = BorderFactory.createLineBorder(Color.BLUE, 2);
+                label.setBorder(border);
+            }
+        }
+        return 0;
   }
   
   /**
